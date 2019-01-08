@@ -1,0 +1,43 @@
+cc_binary {
+    name: "nkh-server",
+//    vendor: true,
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-DLOG_TAG=\"NKH-SERVER\""
+    ],
+
+    shared_libs: [
+        "liblog",
+    ],
+
+    local_include_dirs: [
+        "server/src",
+    ],
+
+    srcs: [
+        "server/src/main.cpp",
+    ],
+}
+
+cc_binary {
+    name: "nkh-client",
+//    vendor: true,
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-DLOG_TAG=\"NKH-CLIENT\""
+    ],
+
+    shared_libs: [
+        "liblog",
+    ],
+
+    local_include_dirs: [
+        "client/src",
+    ],
+
+    srcs: [
+        "client/src/main.cpp",
+    ],
+}
