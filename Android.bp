@@ -15,11 +15,13 @@ cc_binary {
 
     local_include_dirs: [
         "server/src",
+        "server/src/com/nkh/cpp_binder/server"
     ],
 
     srcs: [
         "server/src/main.cpp",
         "server/src/com/nkh/cpp_binder/server/IServer.aidl",
+        "server/src/com/nkh/cpp_binder/server/Server.cpp",
     ],
 }
 
