@@ -9,6 +9,8 @@ cc_binary {
 
     shared_libs: [
         "liblog",
+        "libbinder", // for Binder
+        "libutils",  // for Binder
     ],
 
     local_include_dirs: [
@@ -17,6 +19,7 @@ cc_binary {
 
     srcs: [
         "server/src/main.cpp",
+        "server/src/com/nkh/cpp_binder/server/IServer.aidl",
     ],
 }
 
