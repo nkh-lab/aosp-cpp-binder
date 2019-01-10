@@ -18,3 +18,5 @@ gen/aidl/vendor/nkh/aosp-cpp-binder/server/src/com/nkh/cpp_binder/server/IServer
    https://android.googlesource.com/platform/system/tools/aidl/+/brillo-m10-dev/docs/aidl-cpp.md
 2. Yet Another Deep Dive of Android Binder Framework
    https://pierrchen.blogspot.com/2015/06/yet-another-deep-dive-of-android-binder.html
+3. BinderDemo - good example
+   https://github.com/gburca/BinderDemo
